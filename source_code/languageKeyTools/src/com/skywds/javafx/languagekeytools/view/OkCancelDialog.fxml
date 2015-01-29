@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane prefHeight="200.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.skywds.javafx.languagekeytools.view.OkCancelDialogContoller">
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="msgLabel" alignment="TOP_LEFT" layoutX="7.0" prefHeight="133.0" prefWidth="387.0" text="提示" wrapText="true">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <HBox layoutX="216.0" layoutY="147.0">
+               <children>
+                  <Button fx:id="okBtn" layoutX="218.0" layoutY="153.0" mnemonicParsing="false" onAction="#handleOkBtn" prefHeight="39.0" prefWidth="75.0" text="确定">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="cancelBtn" layoutX="293.0" layoutY="153.0" mnemonicParsing="false" onAction="#handleCancelBtn" prefHeight="39.0" prefWidth="73.0" text="取消">
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

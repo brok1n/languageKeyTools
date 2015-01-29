@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.skywds.javafx.languagekeytools.view.ContentLayerController">
+   <children>
+      <Button fx:id="clearLogBtn" layoutX="589.0" layoutY="536.0" mnemonicParsing="false" onAction="#clearLogBtn" prefHeight="41.0" prefWidth="199.0" text="清除日志" />
+      <Button fx:id="deleteBtn" layoutX="589.0" layoutY="480.0" mnemonicParsing="false" onAction="#handleDeleteBtn" prefHeight="41.0" prefWidth="88.0" text="删除" />
+      <Button fx:id="saveBtn" layoutX="700.0" layoutY="480.0" mnemonicParsing="false" onAction="#handleSaveBtn" prefHeight="41.0" prefWidth="88.0" text="保存" />
+      <Label layoutX="77.0" layoutY="2.0" text="Key" />
+      <Label layoutX="256.0" layoutY="2.0" text="中文" />
+      <Label layoutX="434.0" layoutY="2.0" text="英文" />
+      <TextField fx:id="inputKey" layoutX="19.0" layoutY="28.0" />
+      <TextField fx:id="inputChinese" layoutX="199.0" layoutY="28.0" />
+      <TextField fx:id="inputEnglish" layoutX="377.0" layoutY="28.0" />
+      <Button fx:id="addBtn" layoutX="612.0" layoutY="12.0" mnemonicParsing="false" onAction="#handleAddBtn" prefHeight="33.0" prefWidth="80.0" text="添加" />
+      <ScrollPane layoutX="14.0" layoutY="62.0" prefHeight="394.0" prefWidth="772.0">
+         <content>
+            <TableView fx:id="tableId" editable="true" prefHeight="392.0" prefWidth="770.0">
+              <columns>
+                <TableColumn fx:id="keyColumn" editable="false" prefWidth="257.0" text="Key" />
+                <TableColumn fx:id="chColumn" editable="false" prefWidth="255.0" text="中文" />
+                  <TableColumn fx:id="enColumn" editable="false" prefWidth="255.0" text="英文" />
+              </columns>
+            </TableView>
+         </content>
+      </ScrollPane>
+      <ListView fx:id="listId" layoutX="14.0" layoutY="465.0" prefHeight="142.0" prefWidth="553.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.input.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<BorderPane prefHeight="650.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.skywds.javafx.languagekeytools.view.RootLayerController">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="文件">
+            <items>
+                  <MenuItem fx:id="openItem" mnemonicParsing="false" onAction="#handleOpenMenuItem" text="打开" />
+                  <MenuItem fx:id="saveItem" mnemonicParsing="false" onAction="#handleSaveMenuItem" text="保存">
+                     <accelerator>
+                        <KeyCodeCombination alt="UP" code="S" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                     </accelerator></MenuItem>
+                  <MenuItem mnemonicParsing="false" text="--------------" />
+              <MenuItem fx:id="closeItem" mnemonicParsing="false" onAction="#handleCloseMenuItem" text="退出" />
+            </items>
+               <accelerator>
+                  <KeyCodeCombination alt="DOWN" code="F" control="UP" meta="UP" shift="UP" shortcut="UP" />
+               </accelerator>
+          </Menu>
+            <Menu mnemonicParsing="false" text="编辑">
+               <accelerator>
+                  <KeyCodeCombination alt="DOWN" code="E" control="UP" meta="UP" shift="UP" shortcut="UP" />
+               </accelerator>
+               <items>
+                  <RadioMenuItem fx:id="autoCleanInputFieldItem" mnemonicParsing="false" onAction="#handleAutoCleanInputFieldItem" text="自动清空输入框" />
+               </items>
+            </Menu>
+          <Menu mnemonicParsing="false" text="帮助">
+            <items>
+              <MenuItem fx:id="aboutItem" mnemonicParsing="false" onAction="#handleAboutMenuItem" text="关于" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+</BorderPane>

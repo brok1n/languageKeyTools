@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="ASCII"?>
+<anttasks:AntTask xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:anttasks="http://org.eclipse.fx.ide.jdt/1.0" buildDirectory="${project}/build">
+  <deploy height="600" width="800" packagingFormat="all">
+    <application name="languageKeyTools" mainclass="com.skywds.javafx.languagekeytools.Main" version="1.0" toolkit="fx"/>
+    <info title="languageKeyTools" vendor="brok1n"/>
+  </deploy>
+  <signjar/>
+</anttasks:AntTask>
